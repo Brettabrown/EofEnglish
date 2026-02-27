@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Language" content="th" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<source src="" id="RandomVid" type="video/mp4">
+
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <style type="text/css">
+
+
+    /*navigation buttons*/
+        a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        }
+
+        a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .previous {
+          background-color: #f1f1f1;
+          color: black;
+        }
+
+        .next {
+          background-color: #04AA6D;
+          color: white;
+        }
+
+        .round {
+          border-radius: 50%;
+        }
+
+        .button-container {
+          max-width: 600px; /* Limits how far apart the buttons spread */
+          margin: 40px auto;
+          padding: 0 20px;
+        }
+
+        .custom-btn {
+          font-family: 'Lato', sans-serif;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          padding: 10px 25px;
+          border-radius: 50px; /* Makes them pill-shaped */
+          transition: all 0.3s ease;
+        }
+
+        /* Specific styling for the Next button */
+        .next-btn {
+          background-color: #f1c40f; /* A nice "Education Gold" */
+          border: none;
+          color: #1a2a3a; /* Dark text for contrast */
+        }
+
+        .next-btn:hover {
+          background-color: #d4ac0d;
+          transform: translateY(-2px); /* Slight lift effect */
+          box-shadow: 0 4px 15px rgba(241, 196, 15, 0.4);
+        }
+
+        /* Styling for the Outline Back button */
+        .btn-outline-light:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: white;
+          transform: translateY(-2px);
+        }
+
+    </style>
+
+    <title>Khmer Numbers</title>
+  </head>
+  <body style = "background-color: #000000;">
+    <h1></h1>
+    <div class="container">
+        <div class="row">
+          <div class="col text-center" >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-2">
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+              <div>
+                <img src="../images/K_04.jpg" alt="one" width="500" height="333">
+
+                <br>
+                <center>
+                <audio controls class="custom-audio">
+                  <source src="../audio/K_04.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.           
+                </audio>
+                </center>
+              </div>
+              <br>
+
+              <div class="d-flex justify-content-between align-items-center button-container">
+
+                <a href="../_Choose_B.html" class="btn btn-outline-light custom-btn">
+                  HOME
+                </a>
+
+
+          <button type="button" onclick="goToRandomPage()" class="btn btn-primary custom-btn next-btn d-flex align-items-center">
+            RANDOM NUMBER
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle ms-2" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3h.5a.5.5 0 0 1 0 1H13c-1.798 0-3.173 1.01-4.126 2.082-.44.493-.77.981-1.008 1.393.238.412.567.9.1.008 1.393C8.827 8.99 10.202 10 12 10h.5a.5.5 0 0 1 0 1H12c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 6 7.068a10.56 10.56 0 0 1-1.126 1.514C3.827 9.76 2.202 11 0 11H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082.44-.493.77-.981 1.008-1.393a10.59 10.59 0 0 1-1.008-1.393C3.173 4.01 1.798 3 0 3.5z"/>
+            </svg>
+          </button>
+
+          <script>
+          function goToRandomPage() {
+            // 1. List all your 43 pages (I've included all the ones you listed)
+            const pages = [
+              'KK_01', 'KK_02', 'KK_03', 'KK_04', 'KK_05', 'KK_06', 'KK_07', 'KK_08', 'KK_09', 'KK_10', 
+              'KK_11', 'KK_12', 'KK_13', 'KK_14', 'KK_15', 'KK_16', 'KK_17', 'KK_18', 'KK_19', 'KK_20', 
+              'KK_21', 'KK_22', 'KK_23', 'KK_24', 'KK_25', 'KK_26', 'KK_27', 'KK_28', 'KK_29', 'KK_30', 
+              'KK_40', 'KK_50', 'KK_60', 'KK_70', 'KK_80', 'KK_90', 'KK_100', 'KK_200', 'KK_300', 
+              'KK_400', 'KK_500', 'KK_1000', 'KK_2000'
+            ];
+
+           // Get the last page name from session storage
+                      const lastPage = sessionStorage.getItem('lastLesson');
+                      let selectedPage;
+
+                      // Use a loop to ensure the new page isn't the same as the last one
+                      do {
+                        const randomIndex = Math.floor(Math.random() * pages.length);
+                        selectedPage = pages[randomIndex];
+                      } while (selectedPage === lastPage);
+
+                      // Save the new selection so we can check it next time
+                      sessionStorage.setItem('lastLesson', selectedPage);
+
+                      // Redirect
+                      window.location.href = selectedPage + ".html";
+          }
+          </script>
+
+
+
+              </div>
+  
+
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-2">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center" style="margin-top: 50px" >
+          </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

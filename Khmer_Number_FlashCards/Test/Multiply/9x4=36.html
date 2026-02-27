@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Language" content="th" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<source src="" id="RandomVid" type="video/mp4">
+
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <style type="text/css">
+
+
+    /*navigation buttons*/
+        a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        }
+
+        a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .previous {
+          background-color: #f1f1f1;
+          color: black;
+        }
+
+        .next {
+          background-color: #04AA6D;
+          color: white;
+        }
+
+        .round {
+          border-radius: 50%;
+        }
+
+        .button-container {
+          max-width: 600px; /* Limits how far apart the buttons spread */
+          margin: 40px auto;
+          padding: 0 20px;
+        }
+
+        .custom-btn {
+          font-family: 'Lato', sans-serif;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          padding: 10px 25px;
+          border-radius: 50px; /* Makes them pill-shaped */
+          transition: all 0.3s ease;
+        }
+
+        /* Specific styling for the Next button */
+        .next-btn {
+          background-color: #f1c40f; /* A nice "Education Gold" */
+          border: none;
+          color: #1a2a3a; /* Dark text for contrast */
+        }
+
+        .next-btn:hover {
+          background-color: #d4ac0d;
+          transform: translateY(-2px); /* Slight lift effect */
+          box-shadow: 0 4px 15px rgba(241, 196, 15, 0.4);
+        }
+
+        /* Styling for the Outline Back button */
+        .btn-outline-light:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: white;
+          transform: translateY(-2px);
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars if text is very large */
+        }
+
+        .equation-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 100px; /* Increased gap for better spacing with larger text */
+            font-size: 6rem; /* 2x bigger than the original 3rem */
+            font-weight: bold;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .label {
+            font-size: 2rem; /* 2x bigger than the original 1rem */
+            margin-top: 10px;
+            text-transform: lowercase;
+            font-weight: normal;
+        }
+
+        .symbol {
+            padding-top: 10px;
+        }
+
+    </style>
+
+    <title>Khmer Multiplication</title>
+  </head>
+  <body style = "background-color: #000000;">
+    <h1></h1>
+    <div class="container">
+        <div class="row">
+          <div class="col text-center" >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-2">
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+              <div>
+                    <div class="equation-container">
+              <div class="column">
+                  <div>9</div>
+                  <div class="label">៩</div>
+              </div>
+
+              <div class="symbol">x</div>
+
+              <div class="column">
+                  <div>4</div>
+                  <div class="label">៤</div>
+              </div>
+
+              <div class="symbol">=</div>
+
+              <div class="column">
+                  <div>36</div>
+                  <div class="label">៣៦</div>
+              </div>
+          </div>
+
+
+
+                <br>
+                <center>
+                <audio controls class="custom-audio">
+                  <source src="audio_multiply/XK_9_4B.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.           
+                </audio>
+                </center>
+              </div>
+              <br>
+
+
+              <div class="d-flex justify-content-between align-items-center button-container">
+
+                    <a href="../_Choose_B.html" class="btn btn-outline-light custom-btn">
+                      HOME
+                    </a>
+
+                    <button type="button" onclick="goToRandomPage()" class="btn btn-primary custom-btn next-btn d-flex align-items-center">
+                        RANDOM NUMBER
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle ms-2" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3h.5a.5.5 0 0 1 0 1H13c-1.798 0-3.173 1.01-4.126 2.082-.44.493-.77.981-1.008 1.393.238.412.567.9.1.008 1.393C8.827 8.99 10.202 10 12 10h.5a.5.5 0 0 1 0 1H12c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 6 7.068a10.56 10.56 0 0 1-1.126 1.514C3.827 9.76 2.202 11 0 11H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082.44-.493.77-.981 1.008-1.393a10.59 10.59 0 0 1-1.008-1.393C3.173 4.01 1.798 3 0 3.5z"/>
+                        </svg>
+                    </button>
+
+                    <script>
+                             function goToRandomPage() 
+                             {
+                                  // 1. List all your 43 pages (I've included all the ones you listed)
+                                  const pages = 
+                                  [
+                                  '1x2', '1x3', '1x4', '1x5', '1x6', '1x7', '1x8', '1x9', '1x10', '1x11', '1x12', '2x1', '2x2', '2x3', '2x4', '2x5', '2x6', '2x7', '2x8', '2x9', '2x10', '2x11', '2x12', '3x1', '3x2', '3x3', '3x4', '3x5', '3x6', '3x7', '3x8', '3x9', '3x10', '3x11', '3x12', '4x1', '4x2', '4x3', '4x4', '4x5', '4x6', '4x7', '4x8', '4x9', '4x10', '4x11', '4x12', '5x1', '5x2', '5x3', '5x4', '5x5', '5x6', '5x7', '5x8', '5x9', '5x10', '5x11', '5x12', '6x1', '6x2', '6x3', '6x4', '6x5', '6x6', '6x7', '6x8', '6x9', '6x10', '6x11', '6x12', '7x1', '7x2', '7x3', '7x4', '7x5', '7x6', '7x7', '7x8', '7x9', '7x10', '7x11', '7x12', '8x1', '8x2', '8x3', '8x4', '8x5', '8x6', '8x7', '8x8', '8x9', '8x10', '8x11', '8x12', '9x1', '9x2', '9x3', '9x4', '9x5', '9x6', '9x7', '9x8', '9x9', '9x10', '9x11', '9x12', '10x1', '10x2', '10x3', '10x4', '10x5', '10x6', '10x7', '10x8', '10x9', '10x10', '10x11', '10x12', '11x1', '11x2', '11x3', '11x4', '11x5', '11x6', '11x7', '11x8', '11x9', '11x10', '11x11', '11x12', '12x1', '12x2', '12x3', '12x4', '12x5', '12x6', '12x7', '12x8', '12x9', '12x10', '12x11', '12x12'
+                                  ];
+
+                                  // Get the last page name from session storage
+                                  const lastPage = sessionStorage.getItem('lastLesson');
+                                  let selectedPage;
+
+                                  // Use a loop to ensure the new page isn't the same as the last one
+                                  do 
+                                  {
+                                    const randomIndex = Math.floor(Math.random() * pages.length);
+                                    selectedPage = pages[randomIndex];
+                                  } while (selectedPage === lastPage);
+
+                                  // Save the new selection so we can check it next time
+                                  sessionStorage.setItem('lastLesson', selectedPage);
+
+                                  // Redirect
+                                  window.location.href = selectedPage + ".html";
+                           `` }
+                    </script>
+
+              </div>
+
+
+  
+
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-2">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center" style="margin-top: 50px" >
+          </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
